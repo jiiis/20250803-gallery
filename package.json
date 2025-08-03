@@ -21,19 +21,19 @@
   },
   "homepage": "https://github.com/jiiis/20250803-gallery#readme",
   "dependencies": {
+    "next": "^15.4.5",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
     "@types/node": "^24.1.0",
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
-    "next": "^15.4.5",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "typescript": "^5.9.2"
-  },
-  "devDependencies": {
     "autoprefixer": "^10.4.21",
     "eslint": "9.32.0",
     "eslint-config-next": "15.4.5",
     "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.9.2"
   }
 }
