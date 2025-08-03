@@ -55,6 +55,10 @@ dist/
 build/
 out/
 
+# Next.js
+.next/
+.vercel
+
 # Temporary files
 *.tmp
 tmp/
