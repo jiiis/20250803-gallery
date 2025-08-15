@@ -2,24 +2,26 @@
   "name": "20250803-gallery",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+  "keywords": [],
+  "homepage": "https://github.com/jiiis/20250803-gallery#readme",
+  "bugs": {
+    "url": "https://github.com/jiiis/20250803-gallery/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jiiis/20250803-gallery.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jiiis/20250803-gallery/issues"
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "format": "prettier --cache --write .",
+    "format:check": "prettier --check .",
+    "lint": "next lint --fix && npm run format",
+    "start": "next start"
   },
-  "homepage": "https://github.com/jiiis/20250803-gallery#readme",
   "dependencies": {
     "next": "^15.4.5",
     "react": "^19.1.1",
@@ -32,7 +34,12 @@
     "autoprefixer": "^10.4.21",
     "eslint": "9.32.0",
     "eslint-config-next": "15.4.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "postcss": "^8.5.6",
+    "prettier": "^3.3.3",
+    "prettier-plugin-packagejson": "^2.5.19",
+    "prettier-plugin-tailwindcss": "^0.6.9",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.9.2"
   }
