@@ -1,5 +1,7 @@
 import Image from 'next/image'
+
 import type { FC } from 'react'
+
 import type { GalleryGridSpan } from '@/library/types'
 
 interface GalleryImageProps {

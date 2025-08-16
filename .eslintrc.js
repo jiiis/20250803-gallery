@@ -24,5 +24,35 @@ module.exports = {
     'unused-imports/no-unused-imports': 'error',
     'import/first': 'error',
     'import/no-duplicates': 'error',
+    'import/order': [
+      'error',
+      {
+        'newlines-between': 'always',
+        distinctGroup: true,
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+        pathGroups: [
+          {
+            pattern: 'next*',
+            group: 'external',
+            position: 'before',
+          },
+          {
+            pattern: 'react*',
+            group: 'internal',
+            position: 'before',
+          },
+          {
+            pattern: '@/app/**',
+            group: 'parent',
+            position: 'before',
+          },
+        ],
+        pathGroupsExcludedImportTypes: ['builtin'],
+        groups: ['builtin', 'external', 'internal', ['parent', 'sibling', 'index']],
+      },
+    ],
   },
 }

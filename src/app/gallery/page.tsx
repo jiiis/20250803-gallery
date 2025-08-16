@@ -1,6 +1,8 @@
-import { GalleryImage } from '@/app/gallery/GalleryImage'
-import { galleryItems } from '@/data/galleryItems'
 import type { FC } from 'react'
+
+import { galleryItems } from '@/data/galleryItems'
+
+import { GalleryImage } from '@/app/gallery/GalleryImage'
 
 const Gallery: FC = () => (
   <div
