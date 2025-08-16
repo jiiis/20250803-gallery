@@ -1,6 +1,11 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: ['next/core-web-vitals', 'next/typescript', 'plugin:prettier/recommended', 'plugin:import/recommended'],
+  extends: [
+    'next/core-web-vitals',
+    'next/typescript',
+    'plugin:prettier/recommended',
+    'plugin:import/recommended',
+  ],
   plugins: ['import', 'unused-imports'],
   rules: {
     'max-len': ['error', { code: 120, ignoreStrings: true }],
