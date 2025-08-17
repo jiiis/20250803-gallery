@@ -19,7 +19,9 @@ export const GalleryImage: FC<GalleryImageProps> = ({
   colSpan = 1,
   rowSpan = 1,
 }) => (
-  <figure className={`relative col-span-${colSpan} row-span-${rowSpan}`}>
+  <figure
+    className={`relative col-span-${colSpan} row-span-${rowSpan} max-[564px]:col-span-full`}
+  >
     <Image
       src={src}
       alt={alt}
