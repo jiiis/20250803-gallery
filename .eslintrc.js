@@ -24,6 +24,7 @@ module.exports = {
     'unused-imports/no-unused-imports': 'error',
     'import/first': 'error',
     'import/no-duplicates': 'error',
+    'import/no-unassigned-import': ['error', { allow: ['**/*.css'] }],
     'import/order': [
       'error',
       {
@@ -41,8 +42,8 @@ module.exports = {
           },
           {
             pattern: 'react*',
-            group: 'internal',
-            position: 'before',
+            group: 'external',
+            position: 'after',
           },
           {
             pattern: '@/app/**',

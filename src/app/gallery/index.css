@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+@source inline("col-span-{1..3}");
+@source inline("row-span-{1..3}");

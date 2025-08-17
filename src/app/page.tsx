@@ -1,5 +1,9 @@
 import { redirect } from 'next/navigation'
 
-export default function Home() {
+import type { FC } from 'react'
+
+const Page: FC = () => {
   redirect('/gallery')
 }
+
+export default Page

@@ -4,6 +4,8 @@ import type { FC } from 'react'
 
 import type { GalleryGridSpan } from '@/library/types'
 
+import '@/app/gallery/index.css'
+
 interface GalleryImageProps {
   src: string
   alt?: string
@@ -23,7 +25,7 @@ export const GalleryImage: FC<GalleryImageProps> = ({
       alt={alt}
       fill
       sizes="(max-width: 768px) 100vw, 50vw"
-      className="rounded-[5px] object-cover"
+      className="rounded-xs object-cover"
     />
   </figure>
 )

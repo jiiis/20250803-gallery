@@ -5,5 +5,4 @@ module.exports = {
   theme: {
     extend: {},
   },
-  safelist: [{ pattern: /^col-span-[1-3]$/ }, { pattern: /^row-span-[1-3]$/ }],
 }
